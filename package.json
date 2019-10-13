@@ -1,0 +1,22 @@
+{
+  "name": "spacecan",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "surge dist spacecan.surge.sh",
+    "predeploy": "npm run build"
+  },
+  "keywords": [],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "surge": "^0.21.3"
+  },
+  "dependencies": {
+    "three": "^0.109.0"
+  }
+}
